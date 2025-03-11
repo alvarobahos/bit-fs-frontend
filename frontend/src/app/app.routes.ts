@@ -5,7 +5,7 @@ import { PagenotfoundComponent } from './components/pages/pagenotfound/pagenotfo
 
 export const routes: Routes = [
   { path: 'inicio', title: 'SPA | Inicio', component: HomeComponent },
-  { path: 'prodcutos', title: 'SPA | Productos', component: ProductsComponent },
+  { path: 'productos', title: 'SPA | Productos', component: ProductsComponent },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   {
     path: '**',
