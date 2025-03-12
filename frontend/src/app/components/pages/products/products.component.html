@@ -22,7 +22,7 @@
   <button type="button" (click)="quiereCrear()">+</button>
   <section class="productos">
     @for (producto of productos; track $index) {
-    <a routerLink="detalle-de-producto/{{ producto.id }}">
+    <a routerLink="detalle-de-producto/{{ producto._id }}">
       <div class="producto">
         <img
           src="{{ producto.imagen }}"

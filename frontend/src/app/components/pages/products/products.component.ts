@@ -45,7 +45,7 @@ export class ProductsComponent implements OnInit {
 
   obtenerTodosLosProductos() {
     this.productsService.getAllProducts().subscribe((respuesta: any) => {
-      //console.log('respuesta:', respuesta);
+      console.log('respuesta:', respuesta);
       this.productos = respuesta.data;
     });
   }
