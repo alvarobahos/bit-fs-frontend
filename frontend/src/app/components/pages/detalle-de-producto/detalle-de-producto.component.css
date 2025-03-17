@@ -2,6 +2,8 @@
   padding: 1rem;
   border: 1px solid grey;
   border-radius: 2rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .producto-titulo {

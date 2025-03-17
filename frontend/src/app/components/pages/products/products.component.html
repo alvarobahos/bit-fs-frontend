@@ -1,5 +1,5 @@
 <main>
-  <h1>{{ productos.length }} productos</h1>
+  <h1>Productos</h1>
   @if(esCrear){
   <section>
     <form (submit)="nuevoProducto()">
@@ -19,7 +19,9 @@
     </form>
   </section>
   }@else {
-  <button type="button" (click)="quiereCrear()">+</button>
+  <button class="m-4" type="button" (click)="quiereCrear()">
+    Crear Producto
+  </button>
   <section class="productos">
     @for (producto of productos; track $index) {
     <a routerLink="detalle-de-producto/{{ producto._id }}">
